@@ -81,7 +81,7 @@ function mergeSort (array) {
     return array
   }
   let mid = parseInt(array.length/2)
-  // Split Array in into right and left
+  // Split Array into right and left
   let left = array.slice(0,mid);
   let right = array.slice(mid);
   return merge(
@@ -91,7 +91,6 @@ function mergeSort (array) {
 }
 
 function merge(left, right){
-  console.log("left: "+left+"\nright: "+right)
   if(right===undefined) return left
   return right.concat(left).sort((a,b)=>{
     return a-b
